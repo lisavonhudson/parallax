@@ -1,0 +1,56 @@
+.heading-font{
+	font-family: 'franchiseregular', serif;
+	text-transform: uppercase;
+	font-size: 6vw;
+	margin: 0;	
+}
+
+.text-font{
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 1.5vw;
+	font-weight: 600;
+	margin: 0;
+	line-height: 2vw;
+}
+
+.background-contain{
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.background-cover{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.background-size(@size: 50%){
+	-webkit-background-size: @size;
+	-moz-background-size: @size;
+	-o-background-size: @size;
+	background-size: @size;
+}
+.accessible-hidden{
+	left:-99999px;
+	position:absolute;
+}
+.transparent-off{
+	filter: alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;
+}
+.transparent-on{
+	filter: alpha(opacity=1);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+.rotate(@rot:0){
+	-ms-transform: rotate(@rot);
+    -webkit-transform: rotate(@rot); 
+    transform: rotate(@rot);
+}

@@ -1,0 +1,935 @@
+
+section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+.main{
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	text-align:center; 
+     color: @light-color;
+
+     .text-container{
+        text-align: center;
+        position: absolute;
+        width: 75%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+
+    }
+}
+a{
+    color: @light-color;
+}
+.side{
+	position: absolute;
+	width: 30%;
+	height: 100%;
+     color: @light-color;
+    h2{
+        padding: 2vw 2vw 0 2vw;
+        line-height: 5vw;
+        text-align: left;
+    }
+    p{
+        padding: 0 6vw 0 2vw;
+    }
+    .text-container{
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+.slide-ins{
+    .heading-font;
+    color: @light-color;
+    font-size: 3vw;
+    text-align: left;
+    position: relative;
+    .text{
+        padding: 8% 0 8% 25%;
+    }
+
+}
+
+
+h2{
+    .heading-font;
+    	
+}
+p{
+	.text-font;
+}
+ul{
+    .text-font;
+    margin: 0 0 0 1vw;
+}
+#blocksContainer{
+	position: fixed;
+	width: 30%;
+	height: 100%;
+	text-align:center;
+	z-index: 1000;
+	right: 0;
+}
+.blocks{
+    width: 60%;
+    max-width: 296px;
+    height: 100%;
+    position: absolute;
+    right: 20%;
+
+}
+.block-start{
+     top: 0%;
+    width: 60%;
+    right: 20%;
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.block-mini{
+     top: 37%;
+    width: 20%;
+    right: 5%;
+    opacity: .5;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+#sevenBlocks {
+     .main{
+        left: 0;
+        background: @salmon;
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+        text-align: center;
+     }
+    -skrollr-animation-name:animation1;
+}
+#sevenBlocksText{
+    -skrollr-animation-name:animation2;
+    position: relative;
+    background: url(../images/intro.png) no-repeat center center; 
+    .background-contain;
+    width: 75%;
+    max-width: 700px;
+    height: 75%;
+    margin: 0 auto;
+}
+
+#blocksBorder{
+    -skrollr-animation-name:animation4;
+    background: url(../images/blocks-outline.png) no-repeat center center; 
+    .background-contain;
+}
+#blocks1{
+    -skrollr-animation-name:animation5;
+    background: url(../images/blocks-1.png) no-repeat center center; 
+    .background-contain;
+}
+#blocks2{
+    -skrollr-animation-name:animation6;
+    background: url(../images/blocks-2.png) no-repeat center center; 
+    .background-contain;
+}
+#blocks3{
+    -skrollr-animation-name:animation7;
+    background: url(../images/blocks-3.png) no-repeat center center; 
+    .background-contain;
+}
+#blocks4{
+    -skrollr-animation-name:animation8;
+    background: url(../images/blocks-4.png) no-repeat center center; 
+    .background-contain;
+}
+#blocks5{
+    -skrollr-animation-name:animation9;
+    background: url(../images/blocks-5.png) no-repeat center center; 
+    .background-contain;
+}
+#blocks6{
+    -skrollr-animation-name:animation10;
+    background: url(../images/blocks-6.png) no-repeat center center; 
+    .background-contain;
+}
+#blocks7{
+    -skrollr-animation-name:animation11;
+    background: url(../images/blocks-7.png) no-repeat center center; 
+    .background-contain;
+}
+
+#healthcareConsumers{
+    -skrollr-animation-name:animation3;
+    .main{
+        right: 0;
+        background: @dark-color;
+     }
+     .side{
+        left: 0;
+        background: @bright-blue;
+        color: @light-color;
+     }
+}
+
+.not-so-simple{
+	position: absolute;
+    width: 75%;
+    max-width: 796px;
+    height: 75%;
+}
+
+#simple{
+	-skrollr-animation-name:animation12;
+	background: url(../images/simple.png) no-repeat center center; 
+    .background-contain;
+}
+#notSo{
+	-skrollr-animation-name:animation13;
+	background: url(../images/not-so.png) no-repeat center center; 
+    .background-contain;
+     top: 14%;
+     left: 15%;
+}
+
+#healthcarePX{
+	-skrollr-animation-name:animation14;
+    .main{
+        right: 0;
+        background: @brightest-yellow;
+     }
+     .side{
+        left: 0;
+        background: @mint-green;
+        color: @light-color;
+     }
+}
+.device-swipe{
+	position: absolute;
+    width: 75%;
+    max-width: 780px;
+    height: 75%;
+    top: 15%;
+    right: 15%;
+}
+#device{
+	background: url(../images/device.png) no-repeat center center; 
+    .background-contain;
+}
+#deviceSwipe
+{
+	-skrollr-animation-name:animation15;
+	background: url(../images/device-swipe.png) no-repeat center center; 
+    .background-contain;
+}
+
+#abundanceConfusion{
+    -skrollr-animation-name:animation16;
+    .main{
+        left: 0;
+        background: @salmon;
+        color: @light-color;
+        .text-container{
+            text-align: left;
+        }
+     }
+     .side{
+        right: 0;
+        background: @bright-blue;
+     }
+}
+
+.dog{
+    width: 60%;
+    max-width: 325px;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+}
+
+#dogHead{
+    -skrollr-animation-name:animation17;
+    background: url(../images/dog-head.png) no-repeat center center; 
+    .background-contain;
+}
+#dogBody
+{
+    background: url(../images/dog-body.png) no-repeat center center; 
+    .background-contain;
+}
+
+#credibility{
+    .main{
+        left: 0;
+        background: @dark-color;
+        color: @light-color;
+        .text-container{
+            padding-top: 30%;
+            background: url(../images/check-mark-badge.png) no-repeat top center; 
+            .background-size(40%)
+        }
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+     }
+    -skrollr-animation-name:animation18;
+    
+}
+#measurements{
+    .main{
+        right: 0;
+        background: @bright-blue;
+       
+     }
+     .side{
+        left: 0;
+        background: @salmon;
+     }
+    -skrollr-animation-name:animation19;
+    
+}
+.slide-in-start{
+    right: -200%;
+}
+.slide-in-end{
+    right: 0%;
+}
+#pastSuccesses
+{
+     -skrollr-animation-name:animation20;
+    background: url(../images/trophy.png) no-repeat center left; 
+    .background-size(15%);
+}
+#revenueMetrics
+{
+    -skrollr-animation-name:animation21;
+    background: url(../images/metrics.png) no-repeat center left; 
+    .background-size(15%);
+}
+#clientBase
+{
+    -skrollr-animation-name:animation22;
+    background: url(../images/client-base.png) no-repeat center left; 
+    .background-size(15%);
+}
+#numberTechnology
+{
+    -skrollr-animation-name:animation23;
+    background: url(../images/number-enrollments.png) no-repeat center left; 
+    .background-size(15%);
+}
+#roi{
+    .main{
+        left: 0;
+        background: @dark-color;
+        color: @light-color;
+        .text-container{
+            padding-top: 23%;
+            background: url(../images/roi-sprout.png) no-repeat top center; 
+            .background-size(23%)
+        }
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+     }
+    -skrollr-animation-name:animation24;
+    
+}
+
+#firstStakeholder{
+    .main{
+        right: 0;
+        background: @medium-yellow;
+        .text-container{
+            h2{
+                text-align: left;
+                line-height: 5vw;
+                margin-bottom: 5%;
+            }
+            width: 95%;
+
+        }
+        .slide-ins .text{
+            padding: 3% 0 3% 25%;
+        }
+       
+     }
+     .side{
+        left: 0;
+        background: @bright-blue;
+     }
+    -skrollr-animation-name:animation25;
+    
+}
+#valueEnhancements{
+    position: relative;
+    -skrollr-animation-name:animation26;
+}
+#lowerMedicalCosts
+{
+    -skrollr-animation-name:animation27;
+    background: url(../images/lower-medical-costs.png) no-repeat center left; 
+    .background-size(15%);
+}
+#hsa
+{
+    -skrollr-animation-name:animation28;
+    background: url(../images/hsa.png) no-repeat center left; 
+    .background-size(15%);
+}
+#ancillary
+{
+    -skrollr-animation-name:animation29;
+    background: url(../images/stars.png) no-repeat center left; 
+    .background-size(15%);
+}
+#secondStakeholder{
+    .main{
+        left: 0;
+        background: @salmon;
+        .text-container{
+            text-align: left;
+            .outline-heading{
+                 background: url(../images/arrow.png) no-repeat center left; 
+                .background-size(15%);
+                padding-left: 15%;
+               .heading-font;
+                color: @light-color;
+               -webkit-text-fill-color: @salmon; 
+               -webkit-text-stroke-width: 1px;
+               -webkit-text-stroke-color: @light-color;
+
+            }
+        }
+     }
+     .side{
+        right: 0;
+        background: url(../images/bricks.png) no-repeat center center @dark-color; 
+        .background-cover;
+     }
+    -skrollr-animation-name:animation30;
+}
+
+
+#downWithFees{
+    -skrollr-animation-name:animation31;
+    position: absolute;
+    background: url(../images/down-with-fees.png) no-repeat center center; 
+    .background-contain;
+}
+
+#thirdStakeholder{
+     -skrollr-animation-name:animation32;
+    .side{
+        left: 0;
+        background: @light-color;
+        color: @dark-color;
+    }
+    .main{
+        right: 0;
+        background: @bright-blue;
+        .text-container{
+            width: 95%;
+            height: 95%;
+        }
+    }
+}
+#whatsMostImportant{
+    -skrollr-animation-name:animation33;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+     background: url(../images/whats-most-important.png) no-repeat center center; 
+    .background-contain;
+}
+.most-important {
+    float: left;
+    width: 33.3%;
+    height: 25%;
+    top: 35%;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    .text{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+
+    }
+}
+#revenueNeutral{
+    -skrollr-animation-name:animation34;
+    background: url(../images/paper-boat.png) no-repeat top center; 
+    .background-size(60%);
+}
+#beneficiarySatisfaction{
+    -skrollr-animation-name:animation35;
+    background: url(../images/thumbs-up.png) no-repeat top center; 
+    .background-size(30%);
+}
+#newProducts{
+    -skrollr-animation-name:animation36;
+    background: url(../images/gizmo-1000.png) no-repeat top center; 
+    .background-size(40%);
+}
+#trickedYa{
+    -skrollr-animation-name:animation37;
+     .heading-font;
+     font-size: 3vw;
+    position: relative;
+    top: 50%;
+   
+}
+
+#meaningfulProductChoice{
+    .main{
+        left: 0;
+        background: @dark-color;
+        color: @light-color;
+        .text-container{
+            padding-top: 26%;
+            background: url(../images/new.png) no-repeat top center; 
+            .background-size(56%)
+        }
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+     }
+    -skrollr-animation-name:animation38;
+    
+}
+#paradoxChoice{
+    .side{
+        left: 0;
+        background: @bright-blue;
+    }
+    .main{
+        right: 0;
+        background: @dark-color;
+    }
+    -skrollr-animation-name:animation39;
+}
+#lessMore{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+     background: url(../images/less-is-more.png) no-repeat center center; 
+    .background-contain;
+    -skrollr-animation-name:animation40;
+}
+
+#postEnrollment{
+    .main{
+        left: 0;
+        background: @dark-color;
+        color: @light-color;
+        .text-container{
+            padding-top: 28%;
+            background: url(../images/light-bulb.png) no-repeat bottom right; 
+            .background-size(56%);
+
+            p{
+                margin: 0 10%;
+            }
+        }
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+     }
+    -skrollr-animation-name:animation41;
+}
+#flexibility{
+     -skrollr-animation-name:animation42;
+    .side{
+        left: 0;
+        background: @light-color;
+        color: @melon;
+        h2{
+            color: @dark-color;
+            padding-top: 0;
+        }
+    }
+    .main{
+        right: 0;
+        background: @melon;
+    }
+}
+.robot{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top:5%;
+    left: 5%;
+}
+.robot-start{
+    width: 0%;
+    height: 0%;
+    top:50%;
+    left: 50%;
+}
+.robot-end{
+    width: 95%;
+    height: 95%;
+    top:5%;
+    left: 5%;
+}
+#robot{
+    -skrollr-animation-name:animation43;
+    background: url(../images/robot-body.png) no-repeat center center; 
+    .background-contain;
+}
+#robotText{
+     -skrollr-animation-name:animation44;
+    background: url(../images/robot-text.png) no-repeat center center; 
+    .background-contain;
+}
+#robotLegs{
+     -skrollr-animation-name:animation45;
+    background: url(../images/robot-legs.png) no-repeat center center; 
+    .background-contain;
+}
+#robotAntenna{
+     -skrollr-animation-name:animation46;
+    background: url(../images/robot-antenna.png) no-repeat center center; 
+    .background-contain;
+}
+#robotEyes{
+     -skrollr-animation-name:animation47;
+    background: url(../images/robot-eyes.png) no-repeat center center; 
+    .background-contain;
+}
+#robotHeart{
+     -skrollr-animation-name:animation48;
+    background: url(../images/robot-heart.png) no-repeat center center; 
+    .background-contain;
+}
+#robotHands{
+     -skrollr-animation-name:animation49;
+    background: url(../images/robot-hands.png) no-repeat center center; 
+    .background-contain;
+}
+#servingBeneficiaries{
+     -skrollr-animation-name:animation50;
+    .main{
+        left: 0;
+        background: @dark-color;
+        color: @light-color;
+        .text-container{
+            padding-top: 35%;
+            background: url(../images/house-moon.png) no-repeat top center; 
+            .background-size(56%);
+
+            p{
+                margin: 0 10%;
+            }
+        }
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+     }
+   
+}
+#solutions{
+    -skrollr-animation-name:animation51;
+    .side{
+        left: 0;
+        background: @dark-color;
+    }
+    .main{
+        right: 0;
+        background: @melon;
+    }
+}
+#youCantPlease{
+    -skrollr-animation-name:animation52;
+    position: absolute;
+    left: 5%;
+    height: 40%;
+    top: 10%;
+    background: url(../images/you-cant-please.png) no-repeat center center; 
+    .background-contain;
+}
+#false{
+    -skrollr-animation-name:animation53;
+    position: absolute;
+    background: url(../images/false.png) no-repeat center center; 
+    .background-contain;
+}
+
+#requirementsSoftware{
+     -skrollr-animation-name:animation54;
+    .main{
+        left: 0;
+        background: @dark-color;
+        color: @light-color;
+        .text-container{
+            padding-top: 35%;
+            background: url(../images/floppy-disk.png) no-repeat top center; 
+            .background-size(40%);
+        }
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+     }
+   
+}
+#functionalIntuitive{
+     -skrollr-animation-name:animation55;
+     .side{
+        left: 0;
+        background: @melon;
+        h2{
+            padding-top: 0;
+        }
+     }
+     .main{
+        right: 0;
+        background: @med-blue;
+     }
+
+}
+.knife{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top:5%;
+    left: 5%;
+}
+.knife-start{
+    .transparent-off;
+}
+.knife-end{
+    .transparent-on;
+}
+.knife-blade-end{
+    .transparent-on;
+    .rotate(0deg);
+    top:5%;
+    left: 5%;
+}
+#knifeShadow{
+    -skrollr-animation-name:animation56;
+    background: url(../images/knife-shadow.png) no-repeat center center; 
+    .background-contain;
+}
+#knifeBody{
+    -skrollr-animation-name:animation57;
+    background: url(../images/knife-body.png) no-repeat center center; 
+    .background-contain;
+}
+#knifeCorkScrew{
+    -skrollr-animation-name:animation58;
+    background: url(../images/knife-corkscrew.png) no-repeat center center; 
+    .background-contain;
+}
+#knife1{
+    -skrollr-animation-name:animation59;
+    background: url(../images/knife-1.png) no-repeat center center; 
+    .background-contain;
+}
+#knife2{
+    -skrollr-animation-name:animation60;
+    background: url(../images/knife-2.png) no-repeat center center; 
+    .background-contain;
+}
+#knife3{
+    -skrollr-animation-name:animation61;
+    background: url(../images/knife-3.png) no-repeat center center; 
+    .background-contain;
+}
+
+#decisionSupport{
+     -skrollr-animation-name:animation62;
+    .main{
+        left: 0;
+        background: @dark-color;
+        color: @light-color;
+        .text-container{
+            padding-top: 35%;
+            background: url(../images/compass.png) no-repeat top center; 
+            .background-size(40%);
+        }
+     }
+     .side{
+        right: 0;
+        background: @light-color;
+     }
+   
+}
+#decisionSupportTools{
+    -skrollr-animation-name:animation63;
+    .side{
+        left: 0;
+        background: @melon;
+    }
+    .main{
+        right: 0;
+        background: @bright-blue;
+    }
+
+}
+#toolsCan{
+    -skrollr-animation-name:animation64;
+    top: 5%;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+     background: url(../images/tools-can.png) no-repeat center center; 
+    .background-contain;
+}
+.tools{
+    .text-font;
+    text-align: left;
+    margin: 0 5%;
+    position: relative;
+    background: url(../images/check-mark.png) no-repeat top left; 
+    .background-size(8%);
+    padding-left: 10%;
+    min-height: 20%;
+}
+.tools-container{
+    top: 40%;
+    height: 60%;
+    position: relative;
+}
+.tools-start{
+    left: 200%;
+}
+.tools-end{
+    left: 0%;
+}
+#understandACA{
+    -skrollr-animation-name:animation65;
+}
+#network{
+    -skrollr-animation-name:animation66;
+}
+#employ{
+    -skrollr-animation-name:animation67;
+}
+#manage{
+    -skrollr-animation-name:animation68;
+}
+#megaTrends{
+    -skrollr-animation-name:animation69;
+    .main{
+        left: 0;
+        background: @dark-color;
+    }
+    .side{
+        right: 0;
+        background: @light-color;
+        color: @dark-color;
+        p span{
+            color: @melon;
+            text-transform: uppercase;
+        }
+
+    }
+}
+.mega-trends{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+}
+#mega{
+    -skrollr-animation-name:animation70;
+     background: url(../images/mega.png) no-repeat center center; 
+    .background-contain;
+}
+#trends{
+    -skrollr-animation-name:animation71;
+     background: url(../images/trends.png) no-repeat center center; 
+    .background-contain;
+}
+#consumerLiteracy{
+    -skrollr-animation-name:animation72;
+    .side{
+        left: 0;
+        background: @med-blue;
+        h2{
+            padding-top: 0;
+        }
+    }
+    .main{
+        right: 0;
+        background: @dark-color;
+    }
+
+}
+#guyDesk{
+    -skrollr-animation-name:animation73;
+     position: absolute;
+        background: url(../images/guy-at-desk.png) no-repeat center center; 
+    .background-contain;
+}
+#trustKey{
+    -skrollr-animation-name:animation74;
+     z-index: 2000;
+   .side{
+        left: 0;
+        background: @medium-yellow;
+        h2{
+            padding-top: 0;
+        }
+        .text-container{
+            top: 35%;
+            -webkit-transform: translateY(-40%);
+            -moz-transform: translateY(-40%);
+            -ms-transform: translateY(-40%);
+            -o-transform: translateY(-40%);
+            transform: translateY(-40%);
+        }
+   }
+   .main{
+    right: 0;
+    background: @light-color;
+   }
+}
+#footer{
+    background: @melon;
+    left: 0;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    position: absolute;
+
+}
+#addInfo{
+    width: 25%;
+    position: absolute;
+    right: 1%;
+    color: @light-color;
+     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    p{
+        font-size: 1vw;
+        line-height: 1.5vw;
+    }
+}
