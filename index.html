@@ -8,6 +8,34 @@
 
 </head>
 <body>
+	<!--ul class='list'>
+		<li><a href="#sevenBlocks"  data-menu-top="0">Home</a></li>
+		<li><a href="#healthcareConsumers"  data-menu-top="2800">Healthcare Consumers</a></li>
+		<li><a href="#healthcarePX"  data-menu-top="4700">Healthcare &amp; Private Exchange</a></li>
+		<li><a href="#abundanceConfusion"  data-menu-top="7800">Abundance of Confusion.</a></li>
+		<li><a href="#credibility"  data-menu-top="10100">Credibility</a></li>
+		<li><a href="#measurements"  data-menu-top="14000">Potential exchange providers should always be measured from a business perspective:</a></li>
+		<li><a href="#roi"  data-menu-top="15800">Return on investment</a></li>
+		<li><a href="#firstStakeholder"  data-menu-top="19500">The first stakeholder</a></li>
+		<li><a href="#secondStakeholder"  data-menu-top="21600">Second Stakeholder</a></li>
+		<li><a href="#thirdStakeholder"  data-menu-top="27500">Third Stakeholder</a></li>
+		<li><a href="#meaningfulProductChoice"  data-menu-top="31000">Meaningful product choice</a></li>
+		<li><a href="#paradoxChoice"  data-menu-top="34000">Paradox of choice</a></li>
+		<li><a href="#postEnrollment"  data-menu-top="37000">Post enrollment capabilities &amp; services</a></li>
+		<li><a href="#flexibility"  data-menu-top="43000">Flexibility</a></li>
+		<li><a href="#servingBeneficiaries"  data-menu-top="46000">Serving all Beneficiaries</a></li>
+		<li><a href="#solutions"  data-menu-top="49600">Solutions</a></li>
+		<li><a href="#requirementsSoftware"  data-menu-top="52400">Requirements of great software</a></li>
+		<li><a href="#functionalIntuitive"  data-menu-top="55900">Functional &amp; intuitive</a></li>
+		<li><a href="#decisionSupport"  data-menu-top="58500">Decision Support Tools</a></li>
+		<li><a href="#decisionSupportTools"  data-menu-top="63000">Decision support</a></li>
+		<li><a href="#megaTrends"  data-menu-top="66500">Mega Trends</a></li>
+		<li><a href="#consumerLiteracy"  data-menu-top="68500">Consumer healthcare literacy</a></li>
+		<li><a href="#trustKey"  data-menu-top="71650">Trust is the key</a></li>
+	</ul-->
+		<a href="#" id="previous" class="nav-link">Previous</a>
+		<div class="page-progress"><span id="progress">1</span>/23</div>
+		<a href="#" id="next" class="nav-link">Next</a>
 		<div id="blocksContainer">
 				<div id="blocks7" class="blocks"></div>
 				<div id="blocks6" class="blocks"></div>
@@ -357,8 +385,70 @@
 		</section>
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
 	<script type="text/javascript" src="js/skrollr.stylesheets.min.js"></script>
+	<script type="text/javascript" src="js/skrollr.menu.min.js"></script>
     <script type="text/javascript">
-    	var s = skrollr.init();
+    	/*navigation*/
+    	var scrollArray = [0, 2800, 4700, 7800, 10100, 14000, 15800, 19500, 21600, 27500, 31000, 34000, 37000, 43000, 46000, 49600, 52400, 55900, 58500, 63000, 66500, 68500, 71650];
+
+    	var i = 0;
+    	buildNav();
+
+    	document.getElementById("previous").onclick = function() {
+    		if(i>0 && i<=23){
+    			i = i-2;
+    			buildNav();
+    		}
+
+    	};
+    	document.getElementById("next").onclick = function() {
+    		if(i>=0 && i<23){
+	    		//i++;
+	    		buildNav();
+	    	}
+    	};
+
+    	
+
+    	function buildNav(){
+    		//console.log("nav: "+i);
+
+    		if(i<=0){
+	    		document.getElementById('previous').classList.add('off');
+    		}
+    		else{
+    			document.getElementById('previous').classList.remove('off');
+    		}
+
+    		if(i == 23){
+	    		document.getElementById('next').classList.add('off');
+    		}
+    		else{
+    			document.getElementById('next').classList.remove('off');
+    		}
+
+			document.getElementById("progress").innerHTML = i+1;
+
+			document.getElementById('previous').setAttribute('data-menu-top', scrollArray[i]);
+			document.getElementById('next').setAttribute('data-menu-top', scrollArray[i]);
+
+    	}
+
+    	var s = skrollr.init({
+		    render: function(data) {
+		        //Log the current scroll position.
+		        //console.log("cur: "+data.curTop+"  "+"last:   "+data.lastTop);
+		        var classes = document.querySelectorAll('section.skrollable-after');
+		        console.log(classes.length);
+		        i = classes.length;
+		        buildNav();
+		    }
+		});
+    	skrollr.menu.init(s, {
+		    //How long the animation should take in ms.
+		    duration: function(currentTop, targetTop) {
+		       return Math.abs(currentTop - targetTop) /2;
+		    }
+		});
     </script>
 </body>
 </html>

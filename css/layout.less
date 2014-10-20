@@ -29,6 +29,44 @@ section{
 a{
     color: @light-color;
 }
+
+.page-progress{
+    position: fixed;
+    z-index: 3000;
+    right: 1%;
+    top: 1%;
+    .text-font;
+    font-size: 1vw;
+    line-height: 100%;
+    background: rgba(255,255,255,.75);
+    color: #666;
+    display: block;
+    text-align: center;
+
+}
+.nav-link{
+   position: fixed;
+   z-index: 3000;
+    width: 4%;
+    height: 4%;
+    left: 46%;
+    overflow: hidden;
+    text-indent: 4%;
+    &.off{
+        display: none;
+    }
+
+}
+#previous{
+    top: 1%;
+    background: url(../images/up-arrow.png) no-repeat center center; 
+    .background-contain;
+}
+#next{
+    bottom: 1%;
+     background: url(../images/down-arrow.png) no-repeat center center; 
+    .background-contain;
+}
 .side{
 	position: absolute;
 	width: 30%;
