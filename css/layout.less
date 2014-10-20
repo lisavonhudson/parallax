@@ -31,7 +31,7 @@ a{
 }
 
 .page-progress{
-    position: fixed;
+    position: absolute;
     z-index: 3000;
     right: 1%;
     top: 1%;
@@ -45,28 +45,27 @@ a{
 
 }
 .nav-link{
-   position: fixed;
+   position: absolute;
    z-index: 3000;
     width: 4%;
     height: 4%;
     left: 46%;
     overflow: hidden;
     text-indent: 4%;
-    &.off{
-        display: none;
+
+    &.previous{
+        top: 1%;
+        background: url(../images/up-arrow.png) no-repeat center center; 
+        .background-contain;
+    }
+    &.next{
+        bottom: 1%;
+         background: url(../images/down-arrow.png) no-repeat center center; 
+        .background-contain;
     }
 
 }
-#previous{
-    top: 1%;
-    background: url(../images/up-arrow.png) no-repeat center center; 
-    .background-contain;
-}
-#next{
-    bottom: 1%;
-     background: url(../images/down-arrow.png) no-repeat center center; 
-    .background-contain;
-}
+
 .side{
 	position: absolute;
 	width: 30%;
